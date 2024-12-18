@@ -185,7 +185,7 @@ const handleMouseLeave = () => {
                   Email me with news and offers
                 </label>
               </div>
-              <button className="mobileBtnContact" onClick={handleSubmit}>Continue</button>
+            
             </div>
             <div className={styles.cardContainer}>
                 {addresses && addresses.length > 0  ? (
@@ -273,7 +273,7 @@ const handleMouseLeave = () => {
               </div>
             </div>
 
-            <button className="mobileBtnAddress">Order Now</button>
+          
            
             <div className="form-group notFormGroup">
             <label htmlFor="login-email" className="txtsize">Address</label>
@@ -323,7 +323,7 @@ const handleMouseLeave = () => {
                     onChange={(e) => handleInputChange(e.target.value, 'country')}
                 /> */}
 
-<select onChange={handleCountryChange} value={country}>
+<select onChange={handleCountryChange} value={country} className='selectCountry'>
         <option value="">Select Country</option>
         <option value="India">India</option>
         <option value="USA">USA</option>
@@ -342,7 +342,7 @@ const handleMouseLeave = () => {
                     </ul>
                 )}
             </div>
-            <div className="form-group notFormGroup txtsize">
+            <div className="form-group notFormGroup txtsize pindesktop">
                 <label htmlFor="pincode">Pin Code</label>
                 <input
                     type="text"
@@ -366,6 +366,29 @@ const handleMouseLeave = () => {
                 )}
             </div>
         </div>
+        <div className="form-group notFormGroup txtsize pinmobile">
+                <label htmlFor="pincode">Pin Code</label>
+                <input
+                    type="text"
+                    id="pincode"
+                    placeholder="Enter your Pin Code"
+                    required
+                    value={pincode}
+                    onChange={(e) => handleInputChange(e.target.value, 'pincode')}
+                />
+                {pincodeSuggestions.length > 0 && (
+                    <ul className={styles.suggestions}>
+                        {pincodeSuggestions.map((suggestion, index) => (
+                            <li
+                                key={index}
+                                onClick={() => handleSuggestionClick(suggestion, 'pincode')}
+                            >
+                                {suggestion}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
         </div>
         {/* Order Summary */}
         <div className="order-summary">
@@ -456,7 +479,11 @@ const handleMouseLeave = () => {
 
       <style jsx>{`
 /* Checkout Container */
+.pinmobile{
+display:none;}
 
+.pindesktop{
+display:block;}
 .user-details-section {
 margin: 10px auto;
 width:1200px;
@@ -500,7 +527,7 @@ width:1200px;
 
 .form-group label {
     font-weight: bold;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
     color: #34495e;
 }
 
@@ -593,6 +620,7 @@ width:1200px;
 .payment-method {
     display: flex;
     align-items: center;
+    flex-wrap:wrap;
     margin-bottom: 15px;
    
 }
@@ -751,6 +779,7 @@ width:1200px;
                         border-right: none;
                         border-top-left-radius: 4px;
                         border-bottom-left-radius: 4px;
+                        width:auto;
                         
 }
 .phcheckout{
@@ -761,15 +790,31 @@ width:1200px;
 
 }
 
+.form-group label {
+    font-weight:normal;
+    // margin-bottom: 5px;
+    color: #34495e;
+}
+
+h3{
+font-weight : bold ;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
+
+.telephonecheckout > select{
+width:42%;
+}
     .countrycodecheckout{
         font-size: 14px;
+        width:42%;
     }
     .checkout-container {
         flex-direction: column;
+        margin : 0;
     }
     
+
    
 }
 @media (min-width: 769px) { /* Adjust the width as needed */
@@ -777,13 +822,20 @@ width:1200px;
       display: block; /* Show sections on desktop */
   }
 
-  
-}
-
+      }
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
+.pinmobile{
+display:block;}
+.pindesktop{
+display:none;}
+}
  .menu-section , .mega-menu {
   display: none;
+}
+
+.user-details-section{
+margin : 0;
 }
 
 .checkout-form{
@@ -796,7 +848,7 @@ width:1200px;
   padding: 0 !important;
 }
 label[for="razorpay"]{
-  font-size: 18px;
+  font-size: 14px;
 }
 
 
@@ -835,8 +887,15 @@ label[for="razorpay"]{
     padding: 8px;
   }
   .two-col-name{
-   
+   gap:20px;
+  //  flex-wrap: wrap;
   }
+
+  label[for='pincode']{
+  display:block;
+  }
+
+  
 }
 
 .suggestions {
@@ -868,8 +927,12 @@ label[for="razorpay"]{
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 10px;
+    
 }
 
+.selectCountry{
+
+width:100%;}
 
 
 
