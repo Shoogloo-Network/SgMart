@@ -7,14 +7,11 @@ import { useEffect } from 'react';
 
 
 const Cart = () => {
- 
-   
+
   const items = useSelector((state) => state.cart.items);
   const totalPrice = items.reduce((total, item) => total + item.price * item.quantity, 0);
   const dispatch = useDispatch();
   const router = useRouter();
-
-  
 
   let item = {};
   try {
@@ -36,52 +33,39 @@ const Cart = () => {
     // Clear cart
     dispatch(removeItemFromCart({ id: item.id }))
 
-
     // Redirect to thank you page
     router.push('/orderplaced');
-     
-   
-   
   };
 
   return (
     <div className={styles.cartContainer}>
       <h2 className={styles.cartHeader}>Shopping Cart</h2>
       { 
-      items?.length === 0 ? (
-        <p>Your cart is empty</p>
-      ) : (
+      items?.length === 0 ? (<p>Your cart is empty</p>) : (
         <>
-          {items.map(item => (
+          { items.map(item => (
             <div key={item.id} className={styles.cartItem} >
-
-              <div>
-
-              <img src={item.img} alt={item.title} />
-              
+              <div><img src={item.img} alt={item.title} /></div>
+              <div className={styles.cartItemDetailsAction}>
+                <div className={styles.cartItemDetails}>
+                  <h3>{item.title}</h3>
+                  <p>{item.price}</p>
+                  <p>Quantity: {item.quantity}</p>
+                </div>
               </div>
-              
-             <div className={styles.cartItemDetailsAction}>
-             <div className={styles.cartItemDetails}>
-                <h3>{item.title}</h3>
-                <p>{item.price}</p>
-                <p>Quantity: {item.quantity}</p>
-              </div>
-              </div>
-
               <div className={styles.cartItemActions}>
                 <button onClick={() => dispatch(increaseQuantity({ id: item.id }))}>+</button>
                 <button onClick={() => dispatch(decreaseQuantity({ id: item.id }))}>-</button>
                 <button onClick={() => dispatch(removeItemFromCart({ id: item.id }))}>Remove</button>
               </div>
-             </div>
+            </div>
 
-              ))}
+          ))}
+
           <h3 className={styles.totalPrice}>Total Price: ₹{totalPrice?.toFixed(2)}</h3>
           <button className={styles.proceedButton} onClick={handleProceedToPayment}>Proceed to Payment</button>
         </>
-      )
-      }
+      )}
     </div>
   );
 };
