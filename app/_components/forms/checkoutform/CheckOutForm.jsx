@@ -437,7 +437,7 @@ const handleMouseLeave = () => {
             ))
            }
           </div>
-      {formData && <button  className={styles.button} onClick={handleSubmit}>Make Payment</button>} 
+       <button  className={styles.button} onClick={handleSubmit}>Make Payment</button> 
           <div className="form-group notFormGroup termsGroup" style={{display:'flex',gap:'10px'}}>
             <input
               type="checkbox"
