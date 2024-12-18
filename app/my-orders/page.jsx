@@ -96,7 +96,7 @@ const [showDescription , setShowDescription] = useState(false);
                   <div className="order-items">
                     <div className="order-item">
                       <div className="item-info">
-                        <p>{order.details}</p>
+                        <p>Title</p>
                       </div>
                     </div>
                   </div>
@@ -186,7 +186,7 @@ button .active {
     justify-content: space-between;
     cursor: pointer;
     background-color: #f1f1f1;
-    font-weight: bold;
+    // font-weight: bold;
     height: 48px;
     border-bottom: 1px solid #ddd;
     /* gap: 124px; */

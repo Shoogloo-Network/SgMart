@@ -13,9 +13,21 @@
   .filterItem label {
     display: flex;
     align-items: center;
+
   }
   
   .filterItem input {
     margin-right: 10px;
   }
   
+
+  @media (max-width: 768px) {
+    .filterItem label{
+      font-size: 12px;
+    }
+
+    .filterSection{
+      padding: 5px;
+     
+    }
+  }

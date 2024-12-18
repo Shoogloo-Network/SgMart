@@ -127,7 +127,7 @@ router.push(`/checkout/?data=${encodedData}`);
     <div className={styles.detailPrice}><p className={styles.disprice}>{item.currency} {item.disPrice}</p>
     <p className={styles.disprice}>{item.percentageOff} Off</p></div> 
   </div>
-              <div>
+              <div className={styles.flexRow}>
                 <p className={styles.AvailSize}>Available Sizes:</p>
                 <div id="sizes">
                     {sizes.map(size => (
@@ -141,7 +141,7 @@ router.push(`/checkout/?data=${encodedData}`);
                     ))}
                 </div>
             </div>
-            <div>
+            <div  className={styles.flexRow}>
                 <p  className={styles.AvailSize}>Available Colors:</p>
                 <div id="colors">
                     {colors.map(color => (
@@ -155,6 +155,7 @@ router.push(`/checkout/?data=${encodedData}`);
                     ))}
                 </div>
             </div>
+            <div  className={styles.flexRow}>
             <p className={styles.AvailSize}>Select Quantity :</p>
             <div className={styles.cartItemActions}>
             <button onClick={() => cartItem?.quantity===undefined  ?  dispatch(addItemToCart(item)): dispatch(increaseQuantity({ id: item.id }))} >+</button>
@@ -162,6 +163,8 @@ router.push(`/checkout/?data=${encodedData}`);
           
                 <button onClick={() => dispatch(decreaseQuantity({ id: item.id }))}>-</button>
                </div>
+            </div>
+           
           
    <div className={styles.buttons}>
    <button className={styles.button} onClick={() => {handleAddToCart(item);
@@ -173,7 +176,7 @@ router.push(`/checkout/?data=${encodedData}`);
     <div className={styles.accordion}>
       <div className={styles.accordionItem}>
         <div className={styles.accordionTitle} onClick={() => toggleAccordion(0)}>
-          Product Details
+          <p>Product Details </p> {activeIndex === 0?<span>-</span> : <span>+</span>}
         </div>
         {activeIndex === 0 && (
           <div className={styles.accordionContent}>
@@ -186,7 +189,7 @@ router.push(`/checkout/?data=${encodedData}`);
       </div>
       <div className={styles.accordionItem}>
         <div className={styles.accordionTitle} onClick={() => toggleAccordion(1)}>
-          Reviews
+        <p>Reviews </p> {activeIndex === 1?<span>-</span> : <span>+</span>}
         </div>
         {activeIndex === 1 && (
           <div className={styles.accordionContent}>

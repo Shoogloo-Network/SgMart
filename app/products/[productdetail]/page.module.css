@@ -79,11 +79,22 @@
 }
 
 .accordionTitle {
-  font-size: 14px;
-  font-weight: bold;
+ 
   padding: 10px 0;
   cursor: pointer;
   color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordionTitle > p  {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.accordionTitle  span{
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .accordionContent {
@@ -203,7 +214,12 @@
   background-color: #cc0020;
 }
 
+.flexRow{
+  display: flex;
+ align-items: center;
+ gap: 10px;
 
+}
 
 
 /* Mobile Styles */
@@ -216,11 +232,22 @@
 
   .imageContainer {
     width: 100%; /* Full width on mobile */
+    flex-direction: column-reverse;
+    gap: 10px;
     justify-content: center; /* Center images on mobile */
+    align-items: center;
   }
-
+  .imageLeft{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imageLeft>img{
+    width: 31%;
+    height: auto;
+  }
   .imageRight {
     max-width: 100%; /* Full width on mobile */
+    width: 100%;
     height: auto; /* Adjust height for mobile */
   }
 
