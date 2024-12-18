@@ -41,7 +41,7 @@
 @media (max-width: 768px) {
   .container {
     height: auto; /* Adjust height for mobile */
-   
+   margin-bottom: 0;
   }
 
   .productCard {
