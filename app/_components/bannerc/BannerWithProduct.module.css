@@ -1,0 +1,64 @@
+.container {
+    background-image: url('/images/bannerwithcardproduct1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* This ensures the background image covers the container */
+    width: 100%;
+    height: 100vh; /* Set to viewport height for full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 146px;
+    cursor: pointer;
+  }
+
+  .productHeadingDiv{
+    margin-top: 20%;
+  }
+
+
+  .productCard{
+    display: flex;
+    margin-bottom: -100px;
+    z-index: 10;
+    gap: 30px;
+    
+  }
+
+
+  .productCard>div>p{
+    padding: 5px 0;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    /* color: #24272a; */
+    color: #182c52;
+    font-weight: bold;
+    font-family: Avenir Next LT;
+  }
+  
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    height: auto; /* Adjust height for mobile */
+   
+  }
+
+  .productCard {
+    flex-direction: row; /* Ensure horizontal layout */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px; /* Adjust gap for mobile */
+    padding: 10px; /* Add padding for better spacing */
+    width: 100%; /* Ensure full width */
+    margin-bottom: 0; /* Adjust margin for mobile */
+  }
+
+  .productCard > div {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 80%; /* Adjust width for mobile */
+  }
+
+  .productCard > div > p {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}

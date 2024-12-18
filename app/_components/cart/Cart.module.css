@@ -1,0 +1,152 @@
+.cartContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .cartHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    
+  }
+  
+  .cartItem img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .cartItemDetails {
+    flex: 1;
+    margin-left: 20px;
+    
+  
+  }
+  
+  .cartItemDetails h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .cartItemDetails p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .cartItemActions {
+    display: flex;
+    align-items: center;
+    
+  }
+
+
+
+  
+  .cartItemActions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
+
+
+  .cartItemDetailsAction{
+    display: flex;
+    width: 50%;
+  }
+  
+  .cartItemActions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .totalPrice {
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .proceedButton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .proceedButton:hover {
+    background-color: #218838;
+  }
+  
+
+  @media (max-width: 768px) {
+    .cartItemDetailsAction {
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+
+    .cartItemActions button {
+      margin: 0 5px;
+      padding: 2px 5px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .cartItemDetails{
+      margin-left: 0;
+    }     
+
+
+
+
+    .proceedButton {
+      display: block;
+      width: auto;
+      padding: 8px;
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }

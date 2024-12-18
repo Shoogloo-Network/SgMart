@@ -1,0 +1,37 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .h1{
+    font-size: 2.5em;
+    color: #28a745;
+  }
+  
+  .p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .backButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3;
+  }
+  

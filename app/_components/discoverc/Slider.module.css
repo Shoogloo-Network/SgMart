@@ -1,0 +1,96 @@
+.iconButton {
+    color: white; /* Set the color to white */
+    background: none; /* Remove any background if needed */
+    border: none; /* Remove any border if needed */
+    font-size: 24px; /* Adjust the size as needed */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .iconButton:hover {
+    opacity: 0.8; /* Optional: Add a hover effect */
+  }
+  
+          .slider {
+            position: relative;
+            max-width: 1200px;
+            height: 500px;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+          }
+          
+          .sliderWrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+           
+          }
+          
+          .slide {
+            min-width: 100%;
+            height: 512px;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+          }
+          
+          .slide.active {
+            display: block;
+          }
+          
+          .prev, .next, .pause, .play {
+            position: absolute;
+            top: 90%;
+            transform: translateY(-50%);
+          
+            cursor: pointer;
+          }
+          
+          .prev {
+            left: 85%;
+          }
+          
+          .next {
+            right: 10px;
+          }
+          
+          .pause, .play {
+            bottom: 10px;
+            left: 92%;
+            transform: translate(-50%, -50%);
+          }
+
+
+
+
+          /* Mobile Styles */
+@media (max-width: 768px) {
+  .slider {
+    height: 300px; /* Adjust height for mobile */
+  }
+
+  .slide {
+    height: 300px; /* Adjust height for mobile */
+  }
+
+  .prev, .next, .pause, .play {
+    top: 80%; /* Adjust position for mobile */
+  }
+
+  .prev {
+    left: 75%; /* Adjust position for mobile */
+  }
+
+  .next {
+    right: 5px; /* Adjust position for mobile */
+  }
+
+  .pause, .play {
+    bottom: 5px; /* Adjust position for mobile */
+    left: 85%; /* Adjust position for mobile */
+  }
+
+  .iconButton {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+}

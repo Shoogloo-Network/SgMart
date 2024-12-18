@@ -1,0 +1,607 @@
+{
+  "bannerhome": [
+    {
+      "id": "1",
+      "img": "/images/bannercardwomen.jpg",
+      "title":"Women Jeans"
+      
+    }
+  ],
+  "categorysliderdata": [
+    {
+      "id": "1",
+      "img": "/images/womenjeans.jpg",
+      "title": "Women Jeans"
+      
+    },
+    {
+      "id": "2",
+      "img": "/images/womentop.jpg",
+      "title": "Women Top"
+      
+    },
+    {
+      "id": "3",
+      "img": "/images/menjeans.jpg",
+      "title": "Men Jeans"
+      
+    },
+    {
+      "id": "4",
+      "img": "/images/mentees.jpg",
+      "title": "Men Tees"
+      
+    },
+    {
+      "id": "5",
+      "img": "/images/clearenace.jpg",
+      "title": "Clearance"
+      
+    },
+    {
+      " id": "6",
+      "img": "/images/womenjeans.jpg",
+      "title": "Cut Jeans"
+      
+    }
+  ],
+  "productcard": [
+    {
+      "id": "1",
+      "img": "/images/product1.png",
+      "title": "Women T-shirt",
+      "type": "T-shirt",
+      "price": "1500",
+      "disPrice": "1100",
+      "percentageOff": "30%",
+      "colorCode": "#fff",
+      "colorText": "peach",
+      "link": "#"
+    },
+    {
+      "id": "2",
+      "img": "/images/product2.png",
+      "title": "Men T-shirt",
+      "type": "T-shirt",
+      "price": "1600",
+      "disPrice": "1200",
+      "percentageOff": "25%",
+      "colorCode": "#000",
+      "colorText": "black",
+      "link": "#"
+    },
+    {
+      "id": "3",
+      "img": "/images/product3.png",
+      "title": "Women Jeans",
+      "type": "Jeans",
+      "price": "2500",
+      "disPrice": "2000",
+      "percentageOff": "20%",
+      "colorCode": "#ccc",
+      "colorText": "blue",
+      "link": "#"
+    },
+    {
+      "id": "4",
+      "img": "/images/product4.png",
+      "title": "Men Jeans",
+      "type": "Jeans",
+      "price": "2700",
+      "disPrice": "2200",
+      "percentageOff": "15%",
+      "colorCode": "#000",
+      "colorText": "dark blue",
+      "link": "#"
+    },
+    {
+      "id": "5",
+      "img": "/images/product1.png",
+      "title": "Women Top",
+      "type": "Top",
+      "price": "1800",
+      "disPrice": "1400",
+      "percentageOff": "22%",
+      "colorCode": "#f7f7f7",
+      "colorText": "white",
+      "link": "#"
+    },
+    {
+      "id": "6",
+      "img": "/images/product2.png",
+      "title": "Men Jacket",
+      "type": "Jacket",
+      "price": "3500",
+      "disPrice": "3000",
+      "percentageOff": "15%",
+      "colorCode": "#333",
+      "colorText": "grey",
+      "link": "#"
+    },
+    {
+      "id": "7",
+      "img": "/images/product3.png",
+      "title": "Women Dress",
+      "type": "Dress",
+      "price": "4000",
+      "disPrice": "3500",
+      "percentageOff": "12%",
+      "colorCode": "#000",
+      "colorText": "black",
+      "link": "#"
+    },
+    {
+      "id": "8",
+      "img": "/images/product4.png",
+      "title": "Men Shirt",
+      "type": "Shirt",
+      "price": "2200",
+      "disPrice": "1800",
+      "percentageOff": "18%",
+      "colorCode": "#008080",
+      "colorText": "teal",
+      "link": "#"
+    },
+    {
+      "id": "9",
+      "img": "/images/product1.png",
+      "title": "Women Skirt",
+      "type": "Skirt",
+      "price": "1600",
+      "disPrice": "1200",
+      "percentageOff": "25%",
+      "colorCode": "#f5f5f5",
+      "colorText": "light grey",
+      "link": "#"
+    },
+    {
+      "id": "10",
+      "img": "/images/product1.png",
+      "title": "Men Sweater",
+      "type": "Sweater",
+      "price": "2300",
+      "disPrice": "1900",
+      "percentageOff": "17%",
+      "colorCode": "#606060",
+      "colorText": "charcoal",
+      "link": "#"
+    },
+    {
+      "id": "11",
+      "img": "/images/product1.png",
+      "title": "Women Jacket",
+      "type": "Jacket",
+      "price": "3300",
+      "disPrice": "2800",
+      "percentageOff": "15%",
+      "colorCode": "#fcfcfc",
+      "colorText": "off-white",
+      "link": "#"
+    },
+    {
+      "id": "12",
+      "img": "/images/product1.png",
+      "title": "Men Pants",
+      "type": "Pants",
+      "price": "2400",
+      "disPrice": "2000",
+      "percentageOff": "16%",
+      "colorCode": "#333",
+      "colorText": "navy",
+      "link": "#"
+    },
+    {
+      "id": "13",
+      "img": "/images/product1.png",
+      "title": "Women Blouse",
+      "type": "Blouse",
+      "price": "1500",
+      "disPrice": "1300",
+      "percentageOff": "15%",
+      "colorCode": "#f5f5f5",
+      "colorText": "light pink",
+      "link": "#"
+    },
+    {
+      "id": "14",
+      "img": "/images/product1.png",
+      "title": "Men Shoes",
+      "type": "Shoes",
+      "price": "2800",
+      "disPrice": "2500",
+      "percentageOff": "10%",
+      "colorCode": "#000",
+      "colorText": "black",
+      "link": "#"
+    },
+    {
+      "id": "15",
+      "img": "/images/product1.png",
+      "title": "Women Boots",
+      "type": "Boots",
+      "price": "3500",
+      "disPrice": "3000",
+      "percentageOff": "14%",
+      "colorCode": "#8b4513",
+      "colorText": "brown",
+      "link": "#"
+    },
+    {
+      "id": "16",
+      "img": "/images/product1.png",
+      "title": "Men Sneakers",
+      "type": "Sneakers",
+      "price": "2200",
+      "disPrice": "1900",
+      "percentageOff": "15%",
+      "colorCode": "#ff6347",
+      "colorText": "tomato red",
+      "link": "#"
+    },
+    {
+      "id": "17",
+      "img": "/images/product1.png",
+      "title": "Women Sandals",
+      "type": "Sandals",
+      "price": "1700",
+      "disPrice": "1400",
+      "percentageOff": "18%",
+      "colorCode": "#faebd7",
+      "colorText": "antique white",
+      "link": "#"
+    },
+    {
+      "id": "18",
+      "img": "/images/product1.png",
+      "title": "Men Boots",
+      "type": "Boots",
+      "price": "4000",
+      "disPrice": "3500",
+      "percentageOff": "12%",
+      "colorCode": "#a52a2a",
+      "colorText": "brown",
+      "link": "#"
+    },
+    {
+      "id": "19",
+      "img": "/images/product1.png",
+      "title": "Women Sandals",
+      "type": "Sandals",
+      "price": "1400",
+      "disPrice": "1200",
+      "percentageOff": "14%",
+      "colorCode": "#ff69b4",
+      "colorText": "hot pink",
+      "link": "#"
+    },
+    {
+      "id": "20",
+      "img": "/images/product2.png",
+      "title": "Men Loafers",
+      "type": "Loafers",
+      "price": "1800",
+      "disPrice": "1500",
+      "percentageOff": "17%",
+      "colorCode": "#000",
+      "colorText": "black",
+      "link": "#"
+    },
+    {
+      "id": "21",
+      "img": "/images/product2.png",
+      "title": "Women Heels",
+      "type": "Heels",
+      "price": "2500",
+      "disPrice": "2000",
+      "percentageOff": "20%",
+      "colorCode": "#ff1493",
+      "colorText": "deep pink",
+      "link": "#"
+    },
+    {
+      "id": "22",
+      "img": "/images/product2.png",
+      "title": "Men Sneakers",
+      "type": "Sneakers",
+      "price": "2200",
+      "disPrice": "1900",
+      "percentageOff": "14%",
+      "colorCode": "#2f4f4f",
+      "colorText": "dark slate gray",
+      "link": "#"
+    },
+    {
+      "id": "23",
+      "img": "/images/product2.png",
+      "title": "Women Flats",
+      "type": "Flats",
+      "price": "1300",
+      "disPrice": "1000",
+      "percentageOff": "23%",
+      "colorCode": "#fffacd",
+      "colorText": "lemon chiffon",
+      "link": "#"
+    },
+    {
+      "id": "24",
+      "img": "/images/product2.png",
+      "title": "Men Flip Flops",
+      "type": "Flip Flops",
+      "price": "800",
+      "disPrice": "600",
+      "percentageOff": "25%",
+      "colorCode": "#f0e68c",
+      "colorText": "khaki",
+      "link": "#"
+    },
+    {
+      "id": "25",
+      "img": "/images/product2.png",
+      "title": "Women Wedges",
+      "type": "Wedges",
+      "price": "2200",
+      "disPrice": "1900",
+      "percentageOff": "14%",
+      "colorCode": "#dda0dd",
+      "colorText": "plum",
+      "link": "#"
+    },
+    {
+      "id": "26",
+      "img": "/images/product2.png",
+      "title": "Men Casual Shoes",
+      "type": "Casual Shoes",
+      "price": "2200",
+      "disPrice": "1800",
+      "percentageOff": "18%",
+      "colorCode": "#d3d3d3",
+      "colorText": "light gray",
+      "link": "#"
+    },
+    {
+      "id": "27",
+      "img": "/images/product2.png",
+      "title": "Women Slippers",
+      "type": "Slippers",
+      "price": "1000",
+      "disPrice": "800",
+      "percentageOff": "20%",
+      "colorCode": "#98fb98",
+      "colorText": "pale green",
+      "link": "#"
+    },
+    {
+      "id": "28",
+      "img": "/images/product2.png",
+      "title": "Men Sandals",
+      "type": "Sandals",
+      "price": "1500",
+      "disPrice": "1200",
+      "percentageOff": "20%",
+      "colorCode": "#ff6347",
+      "colorText": "tomato red",
+      "link": "#"
+    },
+    {
+      "id": "29",
+      "img": "/images/product2.png",
+      "title": "Women Sneakers",
+      "type": "Sneakers",
+      "price": "2200",
+      "disPrice": "1800",
+      "percentageOff": "18%",
+      "colorCode": "#ff7f50",
+      "colorText": "coral",
+      "link": "#"
+    },
+    {
+      "id": "30",
+      "img": "/images/product3.png",
+      "title": "Men Winter Coat",
+      "type": "Coat",
+      "price": "4000",
+      "disPrice": "3500",
+      "percentageOff": "12%",
+      "colorCode": "#a9a9a9",
+      "colorText": "dark gray",
+      "link": "#"
+    }
+  ],
+"productdetail": [
+      {
+        "id": "1",
+        "img": "/images/product1.png",
+        "img1":"/images/product1.png",
+        "img2":"/images/product2.png",
+        "img3":"/images/product3.png",
+        "title": "Women T-shirt",
+        "type": "T-shirt",
+        "price": "1500",
+        "disPrice": "1100",
+        "percentageOff": "30%",
+        "colorCode": "#fff",
+        "colorText": "peach",
+        "link": "#",
+        "description": "A comfortable and stylish peach-colored T-shirt for women. A comfortable and stylish peach-colored T-shirt for women. A comfortable and stylish peach-colored T-shirt for women.",
+        "currency": "INR",
+        "category": "Clothing",
+        "brand": "Fashionista",
+        "size": ["S", "M", "L", "XL"],
+        "color": ["Peach"],
+        "rating": 4.5,
+        "reviews": [
+          {
+            "user": "AliceW",
+            "comment": "Absolutely love this T-shirt! Fits perfectly and looks great. ",
+            "rating": 5
+          },
+          {
+            "user": "BobK",
+            "comment": "Good quality but the color is slightly different than expected.",
+            "rating": 4
+          }
+        ],
+        "stock": 100
+      },
+      {
+        "id": "2",
+        "img": "/images/product2.png",
+        "title": "Men T-shirt",
+        "type": "T-shirt",
+        "price": "1600",
+        "disPrice": "1200",
+        "percentageOff": "25%",
+        "colorCode": "#000",
+        "colorText": "black",
+        "link": "#",
+        "description": "A classic black T-shirt for men, perfect for casual wear. A classic black T-shirt for men, perfect for casual wear. A classic black T-shirt for men, perfect for casual wear.",
+        "currency": "INR",
+        "category": "Clothing",
+        "brand": "Fashionista",
+        "size": ["S", "M", "L", "XL"],
+        "color": ["Black"],
+        "rating": 4.7,
+        "reviews": [
+          {
+            "user": "ChrisP",
+            "comment": "Very comfortable and stylish.",
+            "rating": 5
+          },
+          {
+            "user": "DanaS",
+            "comment": "A bit tight around the shoulders, but overall good quality.",
+            "rating": 4
+          }
+        ],
+        "stock": 80
+      },
+      {
+        "id": "3",
+        "img": "/images/product3.png",
+        "title": "Women Jeans",
+        "type": "Jeans",
+        "price": "2500",
+        "disPrice": "2000",
+        "percentageOff": "20%",
+        "colorCode": "#ccc",
+        "colorText": "blue",
+        "link": "#",
+        "description": "Stylish blue jeans for women, perfect for any occasion. Stylish blue jeans for women, perfect for any occasion. Stylish blue jeans for women, perfect for any occasion.",
+        "currency": "INR",
+        "category": "Clothing",
+        "brand": "DenimCo",
+        "size": ["26", "28", "30", "32"],
+        "color": ["Blue"],
+        "rating": 4.6,
+        "reviews": [
+          {
+            "user": "EmilyR",
+            "comment": "Great fit and very comfortable.",
+            "rating": 5
+          },
+          {
+            "user": "JohnD",
+            "comment": "Good quality but a bit pricey.",
+            "rating": 4
+          }
+        ],
+        "stock": 60
+      },
+      {
+        "id": "4",
+        "img": "/images/product4.png",
+        "title": "Men Jeans",
+        "type": "Jeans",
+        "price": "2700",
+        "disPrice": "2200",
+        "percentageOff": "15%",
+        "colorCode": "#000",
+        "colorText": "dark blue",
+        "link": "#",
+        "description": "Durable and stylish dark blue jeans for men. Durable and stylish dark blue jeans for men. Durable and stylish dark blue jeans for men.",
+        "currency": "INR",
+        "category": "Clothing",
+        "brand": "DenimCo",
+        "size": ["30", "32", "34", "36"],
+        "color": ["Dark Blue"],
+        "rating": 4.8,
+        "reviews": [
+          {
+            "user": "MikeT",
+            "comment": "Excellent quality and fit.",
+            "rating": 5
+          },
+          {
+            "user": "SaraL",
+            "comment": "A bit long, but otherwise great.",
+            "rating": 4
+          }
+        ],
+        "stock": 50
+      },
+      {
+        "id": "5",
+        "img": "/images/product1.png",
+        "title": "Women Top",
+        "type": "Top",
+        "price": "1800",
+        "disPrice": "1400",
+        "percentageOff": "22%",
+        "colorCode": "#f7f7f7",
+        "colorText": "white",
+        "link": "#",
+        "description": "Elegant white top for women, suitable for both casual and formal wear. Elegant white top for women, suitable for both casual and formal wear. Elegant white top for women, suitable for both casual and formal wear.",
+        "currency": "INR",
+        "category": "Clothing",
+        "brand": "Fashionista",
+        "size": ["S", "M", "L", "XL"],
+        "color": ["White"],
+        "rating": 4.4,
+        "reviews": [
+          {
+            "user": "AnnaK",
+            "comment": "Beautiful top, very comfortable.",
+            "rating": 5
+          },
+          {
+            "user": "TomH",
+            "comment": "Good quality but a bit see-through.",
+            "rating": 4
+          }
+        ],
+        "stock": 70
+      },
+      {
+        "id": "6",
+        "img": "/images/product2.png",
+        "title": "Men Jacket",
+        "type": "Jacket",
+        "price": "3500",
+        "disPrice": "3000",
+        "percentageOff": "15%",
+        "colorCode": "#333",
+        "colorText": "grey",
+        "link": "#",
+        "description": "Stylish grey jacket for men, perfect for winter. Stylish grey jacket for men, perfect for winter. Stylish grey jacket for men, perfect for winter.",
+        "currency": "INR",
+        "category": "Clothing",
+        "brand": "WinterWear",
+        "size": ["M", "L", "XL", "XXL"],
+        "color": ["Grey"],
+        "rating": 4.9,
+        "reviews": [
+          {
+            "user": "JamesB",
+            "comment": "Very warm and stylish.",
+            "rating": 5
+          },
+          {
+            "user": "LindaM",
+            "comment": "Great jacket but a bit expensive.",
+            "rating": 4
+          }
+        ],
+        "stock": 40
+      }
+    ]
+}

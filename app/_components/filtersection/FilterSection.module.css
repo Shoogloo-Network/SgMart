@@ -1,0 +1,21 @@
+.filterSection {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .filterItem {
+    margin-bottom: 10px;
+  }
+  
+  .filterItem label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filterItem input {
+    margin-right: 10px;
+  }
+  

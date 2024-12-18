@@ -1,0 +1,49 @@
+.categorySliderMainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 20px;
+  }
+  
+  .categorySliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .categorySliderContainerHeading {
+    font-size: 21px;
+    color: #182c52;
+    font-family: Avenir Next LT Demi;
+    font-weight: bold;
+  }
+  
+  /* Mobile Styles */
+@media (max-width: 768px) {
+    .categorySliderMainDiv {
+      flex-direction: row; /* Ensure horizontal layout */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      gap: 20px; /* Adjust gap for mobile */
+      padding: 2px; /* Add padding for better spacing */
+      white-space: nowrap; /* Prevent line breaks */
+      align-items: flex-start;
+      /* margin: 10px 0; */
+    }
+  
+    .categorySliderContainer {
+      display: inline-block; /* Display items inline for horizontal scrolling */
+      width: auto; /* Adjust width for horizontal scrolling */
+     
+    }
+
+    .categorySliderContainer>img{
+        max-width: none;
+    }
+  
+    .categorySliderContainerHeading {
+      font-size: 14px; /* Adjust font size for mobile */
+      text-align: center;
+    }
+  }

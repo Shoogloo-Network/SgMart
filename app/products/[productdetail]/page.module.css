@@ -1,0 +1,277 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  
+  color: #333;
+}
+
+.imageContainer {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 20px;
+  width: 45%;
+  gap: 5px;
+}
+
+.image {
+  max-width: 100%;
+  height:120px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.imageRight{
+  max-width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 480px;
+}
+.description {
+  font-size: 14px;
+
+  color: #555;
+}
+
+.descriptionDiv{
+  width: 55%;
+}
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  color: #FE6E00;
+}
+
+
+.button {
+  background-color: #FE6E00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #cc0020;
+}
+
+.accordion {
+  margin-top: 20px;
+
+}
+
+.accordionItem {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordionTitle {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #333;
+}
+
+.accordionContent {
+  /* padding: 10px 0; */
+  color: #555;
+}
+
+
+.accordionContent>p{
+  font-size: 14px;
+}
+
+.review {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+
+.imageLeft{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.buttonsize {
+  display: inline-block;
+  padding: 5px 10px; /* Smaller size */
+  font-size: 12px;
+  /* font-weight: bold; */
+  margin: 5px 5px 15px 5px;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #888; /* Orange color */
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+.buttonsize:hover {
+  background-color: #FE6E00; /* Lighter orange on hover */
+}
+.selected {
+  background-color: #FE6E00; /* Different shade of orange when selected */
+ 
+}
+
+
+
+
+.activeImage{
+  border: 2px solid  #FE6E00;
+;
+  max-width: 100%;
+  height:120px;
+  border-radius: 4px;
+}
+
+
+
+
+.AvailSize{
+  color: #555;
+  font-size: 14px;
+}
+
+
+
+.disprice{
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  color: #c2bfbf;
+  text-decoration: line-through;
+}
+
+
+.detailPrice{
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.buttons{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+
+
+.cartItemActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cartItemActions button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #FE6E00;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cartItemActions button:hover {
+  background-color: #cc0020;
+}
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on mobile */
+    gap: 10px; /* Adjust gap for mobile */
+    padding: 10px; /* Adjust padding for mobile */
+  }
+
+  .imageContainer {
+    width: 100%; /* Full width on mobile */
+    justify-content: center; /* Center images on mobile */
+  }
+
+  .imageRight {
+    max-width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .descriptionDiv {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .button {
+    width: 100%; /* Full width on mobile */
+    text-align: center; /* Center text on mobile */
+  }
+
+  .accordionTitle {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  .accordionContent > p {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  .review {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  .buttonsize {
+    font-size: 10px; /* Adjust font size for mobile */
+  }
+
+  .AvailSize {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  .disprice {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  .detailPrice {
+    flex-direction: column; /* Stack prices vertically on mobile */
+    gap: 5px; /* Adjust gap for mobile */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    gap: 5px; /* Adjust gap for mobile */
+  }
+
+  .cartItemActions {
+    flex-direction: column; /* Stack actions vertically on mobile */
+    gap: 5px; /* Adjust gap for mobile */
+  }
+  .cartItemActions{
+    flex-direction: row;
+  }
+}
