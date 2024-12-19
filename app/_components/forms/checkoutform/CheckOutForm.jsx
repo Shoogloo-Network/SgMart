@@ -392,7 +392,7 @@ const handleMouseLeave = () => {
         </div>
         {/* Order Summary */}
         <div className="order-summary">
-          <h3>Your Order</h3>
+          <h3>Order Details</h3>
           <div className="order-item">
             <div className="order-item-image">
               <img
@@ -438,7 +438,8 @@ const handleMouseLeave = () => {
             <p>All transactions are secure and encrypted.</p>
            {
             [...Array(2)].map((_,index)=>(
-                <div className="payment-method" key={index}>
+                <div key={index}>
+                <div className="payment-method" >
               <input
                 type="radio"
                 name="payment"
@@ -456,7 +457,11 @@ const handleMouseLeave = () => {
                 <img src="images/master.svg" alt="MasterCard" />
                 
               </span>
+             
             </div>
+            <hr/>
+                </div>
+            
             ))
            }
           </div>
@@ -478,12 +483,17 @@ const handleMouseLeave = () => {
 
 
       <style jsx>{`
+
+      hr{
+      margin-bottom:5px;
+      }
 /* Checkout Container */
 .pinmobile{
 display:none;}
 
 .pindesktop{
 display:block;}
+
 .user-details-section {
 margin: 10px auto;
 width:1200px;
@@ -829,14 +839,20 @@ width:42%;
 display:block;}
 .pindesktop{
 display:none;}
+.user-details-section{
+margin : 0;
+}
+.user-details-section{
+  padding: 10px;
+  width: auto;
+  justify-content: center;
+}
 }
  .menu-section , .mega-menu {
   display: none;
 }
 
-.user-details-section{
-margin : 0;
-}
+
 
 .checkout-form{
     width: 100%;
@@ -849,6 +865,7 @@ margin : 0;
 }
 label[for="razorpay"]{
   font-size: 14px;
+  
 }
 
 
@@ -856,11 +873,7 @@ label[for="razorpay"]{
 
 
 
-.user-details-section{
-  padding: 10px;
-  width: auto;
-  justify-content: center;
-}
+
 .form-group {
   margin-bottom: 10px;
  
