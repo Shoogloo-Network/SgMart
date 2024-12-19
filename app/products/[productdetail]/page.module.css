@@ -308,6 +308,9 @@
   .cartItemActions{
     flex-direction: row;
   }
+  .zoomedImage{
+    display: none;
+  }
 }
 
 
