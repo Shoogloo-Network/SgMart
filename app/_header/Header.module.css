@@ -10,9 +10,10 @@
 }
 
 .header {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  /* max-width: 1200px; */
   display: flex;
+  height: 58px;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
@@ -21,7 +22,7 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  margin: 20px;
+  margin: 20px 0;
   margin-top: 0;
   background: linear-gradient(135deg,#afe9f8,rgb(248, 248, 255));
 }
@@ -76,7 +77,7 @@
   top: 52px;
   right: 70px;
   background-color: #fff; /* Fallback color */
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #afe9f8 14%, #afe9f8 100%);
