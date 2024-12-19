@@ -70,7 +70,7 @@ const Header = () => {
          }
 
 {menuOpen  && (
-        <div className={styles.menu}>
+        <div className={styles.menu}  onMouseEnter={()=>{setMenuOpen(true)}} onMouseLeave={()=>{setMenuOpen(false)}}>
           <div className={styles.menuItem} onClick={() => toggleSubmenu('men')}>
             <p>Men </p><p className={styles.arrow}>{activeCategory === 'men' ? '>' : 'v'}</p>
           </div>
