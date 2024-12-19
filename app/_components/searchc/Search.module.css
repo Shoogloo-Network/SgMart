@@ -50,6 +50,27 @@
   }
   
 
-
+  @media (max-width: 768px) {
+    .inputContainer {
+      flex-direction: row;
+    }
+  
+    .input {
+      margin-bottom: 0;
+      /* margin-right: 10px; */
+      padding: 5px;
+      width: 10%;
+    }
+  
+    .button {
+      width: auto;
+     padding: 6.5px;
+     font-size: 14px;
+    }
+  
+    .results {
+      width: auto;
+    }
+  }
 
   
