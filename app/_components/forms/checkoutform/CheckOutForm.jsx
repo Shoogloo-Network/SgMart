@@ -1,6 +1,6 @@
 'use client'
 import React , {useState,useEffect,useRef} from 'react'
-import Autosuggest from 'react-autosuggest';
+// import Autosuggest from 'react-autosuggest';
 import styles from './CheckOutForm.module.css'
 
 const states = ['California', 'Texas', 'New York', 'Florida', 'Illinois'];
@@ -36,6 +36,7 @@ const CheckOutForm = ({onClick , data}) => {
   const [addresses, setAddresses] = useState([]);
   const [hoveredAddressId, setHoveredAddressId] = useState(null);
   const inputRef = useRef();
+  const [errors, setErrors] = useState({});
 
   
   useEffect(() => {
@@ -49,7 +50,8 @@ const CheckOutForm = ({onClick , data}) => {
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formData = {
+    if (handleValidation()) {
+      const formData = {
         email,
         add,
         firstName,
@@ -73,6 +75,11 @@ const CheckOutForm = ({onClick , data}) => {
 
     console.log('Form Data:', formData);
     onClick();
+      console.log('Form is valid. Submitting...');
+    } else {
+      console.log('Form has errors.');
+    }
+  
 };
 
 
@@ -152,7 +159,65 @@ const handleMouseLeave = () => {
 };
 
 
+const validateEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
 
+const validatePhone = (phone) => {
+  const phoneRegex = /^[0-9]{10}$/;
+  return phoneRegex.test(phone);
+};
+
+const validatePincode = (pincode) => {
+  const pincodeRegex = /^[0-9]{6}$/;
+  return pincodeRegex.test(pincode);
+};
+
+const handleValidation = () => {
+  let tempErrors = {};
+  let isValid = true;
+
+  if (!validateEmail(email)) {
+    tempErrors['email'] = 'Invalid email address';
+    isValid = false;
+  }
+  if (!firstName) {
+    tempErrors['firstName'] = 'First Name is required';
+    isValid = false;
+  }
+  if (!lastName) {
+    tempErrors['lastName'] = 'Last Name is required';
+    isValid = false;
+  }
+  if (!validatePhone(phone)) {
+    tempErrors['phone'] = 'Invalid phone number';
+    isValid = false;
+  }
+  if (!city) {
+    tempErrors['city'] = 'City is required';
+    isValid = false;
+  }
+  if (!add) {
+    tempErrors['add'] = 'Address is required';
+    isValid = false;
+  }
+  if (!state) {
+    tempErrors['state'] = 'State is required';
+    isValid = false;
+  }
+  if (!country) {
+    tempErrors['country'] = 'Country is required';
+    isValid = false;
+  }
+  if (!validatePincode(pincode)) {
+    tempErrors['pincode'] = 'Invalid pincode';
+    isValid = false;
+  }
+
+  setErrors(tempErrors);
+  return isValid;
+};
 
   return (
     <section className="user-details-section ">
@@ -314,14 +379,7 @@ const handleMouseLeave = () => {
             </div>
             <div className="form-group notFormGroup txtsize">
                 <label htmlFor="country">Country</label>
-                {/* <input
-                    type="text"
-                    id="country"
-                    placeholder="Enter your Country"
-                    required
-                    value={country}
-                    onChange={(e) => handleInputChange(e.target.value, 'country')}
-                /> */}
+               
 
 <select onChange={handleCountryChange} value={country} className='selectCountry'>
         <option value="">Select Country</option>
@@ -479,6 +537,7 @@ const handleMouseLeave = () => {
             </label>
           </div>
         </div>
+        
       </div>
 
 
