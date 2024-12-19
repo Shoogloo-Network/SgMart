@@ -177,6 +177,12 @@
   text-decoration: line-through;
 }
 
+.percentageOff{
+  font-size: 14px;
+
+ 
+  text-decoration: none;
+}
 
 .detailPrice{
   display: flex;
@@ -286,8 +292,8 @@
   }
 
   .detailPrice {
-    flex-direction: column; /* Stack prices vertically on mobile */
     gap: 5px; /* Adjust gap for mobile */
+    align-items: center;
   }
 
   .buttons {
@@ -302,4 +308,35 @@
   .cartItemActions{
     flex-direction: row;
   }
+}
+
+
+
+
+
+
+/* Product Zoom Image */
+.productImageContainer {
+  position: relative;
+  width: 600px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoomedImage {
+  position: absolute;
+  top: 60px;
+  left: 45%;
+  width: 600px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-size: 200%; /* Adjust as needed */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }

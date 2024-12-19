@@ -19,6 +19,8 @@ const page = () => {
     const [selectedSizes, setSelectedSizes] = useState('');
     const [selectedColors, setSelectedColors] = useState(''); 
     const [selectedImage, setSelectedImage] = useState('');
+    const [zoom, setZoom] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
     const searchParams = useSearchParams();
     const query = searchParams.get('id');
     const router = useRouter();
@@ -88,6 +90,23 @@ router.push(`/checkout/?data=${encodedData}`);
       
   };
   console.log(selectedImage);
+  
+
+  const handleMouseEnter = () => {
+    setZoom(true);
+  };
+
+  const handleMouseLeave = () => {
+    setZoom(false);
+  };
+
+  const handleMouseMove = (e) => {
+    const { left, top, width, height } = e.target.getBoundingClientRect();
+    const x = ((e.clientX - left) / width) * 100;
+    const y = ((e.clientY - top) / height) * 100;
+    setPosition({ x, y });
+  };
+
   return (
     <div className={styles.container}>
     
@@ -117,15 +136,28 @@ router.push(`/checkout/?data=${encodedData}`);
                 src={selectedImage ? selectedImage : item.img}
                 alt={item.title}
                 className={styles.imageRight}
+                onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onMouseMove={handleMouseMove}
             />
         </div>
+        {zoom && (
+        <div
+          className={styles.zoomedImage}
+          style={{
+            backgroundImage: `url(${selectedImage ? selectedImage : item.img})`,
+            backgroundPosition: `${position.x}% ${position.y}%`,
+          }}
+        />
+      )}
+        
     <div className={styles.descriptionDiv}>
     <h1 className={styles.title}>{item.title}</h1>
     <p className={styles.description}>{item.description}</p>
-   <div>
+   <div style={{display:'flex' , gap:'10px'}}>
     <p className={styles.price}>{item.currency} {item.price}</p>
-    <div className={styles.detailPrice}><p className={styles.disprice}>{item.currency} {item.disPrice}</p>
-    <p className={styles.disprice}>{item.percentageOff} Off</p></div> 
+    <div className={styles.detailPrice}><p className={styles.disprice}>MRP:  {item.disPrice}</p>
+    <p className={styles.percentageOff}>({item.percentageOff} Off)</p></div> 
   </div>
               <div className={styles.flexRow}>
                 <p className={styles.AvailSize}>Available Sizes:</p>
