@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import Search from '../_components/searchc/Search';
 import styles from './Header.module.css';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const Header = () => {
   const cart = useSelector((state) => state.cart);
@@ -11,11 +12,15 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [subMenu , setSubMenu] = useState(false);
   const [activeCategory, setActiveCategory] = useState(null);
-
+  const router = useRouter();
   useEffect(() => {
     setCartCount(cart.items.length);
   }, [cart]);
 
+    const handleCardClick = () => {
+        // Ensure you are passing the correct type of data in the query parameter
+        router.push(`/products/mens?id=1`);
+      };
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -76,7 +81,7 @@ const Header = () => {
           </div>
           {activeCategory === 'men' && (
             <div className={styles.submenu}>
-              <a href="#men-shirts">Shirts</a>
+              <a href="#men-shirts" onClick={handleCardClick}>Shirts</a>
               <a href="#men-pants">Pants</a>
               <a href="#men-shoes">Shoes</a>
             </div>
