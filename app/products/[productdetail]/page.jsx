@@ -100,7 +100,7 @@ router.push(`/checkout/?data=${encodedData}`);
     setZoom(false);
   };
 
-  const handleMouseMove = (e) => {
+const handleMouseMove = (e) => {
     const { left, top, width, height } = e.target.getBoundingClientRect();
     const x = ((e.clientX - left) / width) * 100;
     const y = ((e.clientY - top) / height) * 100;
