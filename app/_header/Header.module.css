@@ -152,7 +152,7 @@
     height: 40px;
     width:40px;
     margin-right: 10px ;
-    display: none;
+  
   }
   .wishList{
     display: none;
@@ -235,7 +235,7 @@
   }
   .arrow{
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: 500;
   }
 
 
