@@ -13,9 +13,10 @@ const Banner = ({data}) => {
     <div className={styles.banner}>
     {
         data.map((item) => {
-            return( <div  style={{backgroundImage:`url(${item.img})`}} className={styles.bannerMainDiv} key={item.id} onClick={()=>handleClick(item)}>
-
-              </div>);
+            return( 
+            <div  style={{backgroundImage:`url(${item.img})`}} className={styles.bannerMainDiv} key={item.id} onClick={()=>handleClick(item)}>
+              </div>      
+            );
         })
     }
     </div>

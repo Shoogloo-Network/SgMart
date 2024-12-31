@@ -7,32 +7,26 @@ import { useEffect } from 'react';
 
 
 const Cart = () => {
-
   const items = useSelector((state) => state.cart.items);
   const totalPrice = items.reduce((total, item) => total + item.price * item.quantity, 0);
   const dispatch = useDispatch();
   const router = useRouter();
-
   let item = {};
   try {
     item = searchParams ? JSON.parse(searchParams) : {};
   } catch (error) {
     console.log("Failed to parse query parameter:", error);
   }
-
   // Find the item in the cart
   const cartItem = items.find(cartItem => cartItem.id === item.id);
   const itemPrice = cartItem ? cartItem.price * cartItem.quantity : item.price;
-
   const handleProceedToPayment = () => {
     // Save order to local storage
     const orderHistory = JSON.parse(localStorage.getItem('orderHistory')) || [];
     orderHistory.push({ ...item, quantity: cartItem ? cartItem.quantity : 1 });
     localStorage.setItem('orderHistory', JSON.stringify(orderHistory));
-
     // Clear cart
     dispatch(removeItemFromCart({ id: item.id }))
-
     // Redirect to thank you page
     router.push('/orderplaced');
   };

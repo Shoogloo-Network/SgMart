@@ -94,10 +94,7 @@
     padding: 5px 15px;
     gap: 10px;
   }
-
   
-
-
   @media (max-width: 768px) {
     .card{
       width: 100%;

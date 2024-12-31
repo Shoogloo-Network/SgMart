@@ -41,19 +41,17 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
     .container {
-        display: flex;
+      display: flex;
       flex-direction: row; /* Ensure horizontal layout */
-     flex-wrap: wrap;
+      flex-wrap: wrap;
       margin: 10px auto; /* Adjust margin for mobile */
-
       width: 100%;
       justify-content: center;
     }
   
     .card {
-  
-      width: 33.33%; /* Adjust width for horizontal scrolling */
-      margin-bottom: 0; /* Remove bottom margin */
+    width: 33.33%; /* Adjust width for horizontal scrolling */
+    margin-bottom: 0; /* Remove bottom margin */
     flex: none;
     transition:none;
     }

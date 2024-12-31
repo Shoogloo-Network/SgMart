@@ -1,9 +1,7 @@
 .banner{
     display: flex;
- 
     cursor: pointer;
 }
-
 
 .bannerMainDiv{
     height: 300px;
@@ -11,15 +9,13 @@
     background-position: center;
 }
 
-
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     .banner {
       flex-direction: column; /* Adjust flex direction for mobile */
       margin: 10px 0; /* Adjust margin for mobile */
     }
-  
+    
     .bannerMainDiv {
       height: 200px; /* Adjust height for mobile */
       background-size: cover;

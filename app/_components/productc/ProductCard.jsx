@@ -10,8 +10,6 @@ const ProductCard = ({data}) => {
           console.error("Item title is missing");
           return;
         }
-        
-    
         router.push(`/products/${String(item.title)}?id=${String(item.id)}`);
       };
   return (
@@ -29,8 +27,6 @@ const ProductCard = ({data}) => {
             <div className={styles.cardPricing}>
             <span className={styles.disPrice}>₹{item.disPrice}</span>
               <span className={styles.price}>₹{item.price}</span>
-             
-             
               <span className={styles.percentageOff}>{item.percentageOff} Off</span>
             </div>
           </div>

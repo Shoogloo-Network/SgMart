@@ -53,7 +53,6 @@ export default function Home() {
 
   return (
     <>
-    
       <Discover />
       <div className="gap30px"></div>
       <CategorySlider data={data} />

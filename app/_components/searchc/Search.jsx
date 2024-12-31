@@ -6,7 +6,6 @@ const Search = () => {
   const [value, setValue] = useState('');
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-
   // Debounced version of the API call
   const fetchData = debounce(async (query) => {
     if (query) {

@@ -11,8 +11,6 @@ const BannerWithProduct = () => {
   return (
     <div className={styles.container} onClick={()=>handleClick({title:"Women"})}>
      <div className={styles.productHeadingDiv}>
-       
-    
         </div> 
         <div className={styles.productCard}>
             <div onClick={(e)=>{e.stopPropagation();
