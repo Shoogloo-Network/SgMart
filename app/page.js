@@ -29,7 +29,6 @@ export default function Home() {
       );
       console.log(CategorySliderData);
       setData(CategorySliderData.data);
-
       const BannerHome = await axios("http://localhost:8080/bannerhome");
       setBannerHomeData(BannerHome.data);
       console.log(BannerHome.data);

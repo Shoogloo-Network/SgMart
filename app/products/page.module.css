@@ -116,18 +116,12 @@
     gap: 20px;
 }
 
-
-
-
 .h1{
     font-weight: bold;
     margin: 10px;
     font-size: 20px;
     text-align: left;
 }
-
-
-
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -136,9 +130,6 @@
       gap: 10px; /* Adjust gap for mobile */
       margin-bottom: 10px; /* Adjust margin for mobile */
     }
-  
-    
-  
     .cardHeading > p {
       font-size: 8px; /* Adjust font size for mobile */
     }
